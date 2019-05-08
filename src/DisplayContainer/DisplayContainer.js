@@ -2,7 +2,6 @@ import React from 'react';
 import './DisplayContainer.css';
 import Bar from '../Bar/Bar';
 
-//Maybe I should declare the array here and render each one by calling the bar component
 const DisplayContainer = ({ unsortedArray }) => {
   const renderBars = () => {
     return unsortedArray.map((n, i) => <Bar key={i} n={n} id={i} />)
