@@ -6,19 +6,7 @@ const DisplayContainer = ({ unsortedArray }) => {
   const renderBars = () => {
     return unsortedArray.map((n, i) => <Bar key={i} n={n} id={i} />)
   }
-  //console.log(unsortedArray);
   return renderBars()
 }
 
 export default DisplayContainer;
-// placeholders divs
-// unsortedArray.forEach((n, i) => {
-//   const root = document.getElementById('app');
-//   const newDiv = document.createElement('div');
-//   newDiv.setAttribute('id', `d-${i}`);
-//   newDiv.style.backgroundColor = "black";
-//   newDiv.style.color = "white";
-//   newDiv.innerText = n;
-//   newDiv.style.width = `${n}%`;
-//   root.appendChild(newDiv);
-// });

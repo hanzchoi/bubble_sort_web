@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DisplayContainer from './DisplayContainer/DisplayContainer';
+import SelectionContainerf from './SelectionContainer/SelectionContainer';
 import './App.css';
 
 
@@ -12,10 +13,8 @@ const App = () => {
   const [unsortedArrayState, setUnsortedArrayState] = useState(unsortedArray);
 
   const sort = (array) => {
-    //console.log(array);
     console.log("sort method was trig")
     for (let i = 0; i < array.length; i++) {
-      //console.log(i, " " ,array[i])
       setTimeout(() => {
         for (let j = 1; j < array.length; j++) {
           if (array[j - 1] > array[j]) {
@@ -42,13 +41,3 @@ const App = () => {
 }
 
 export default App;
-
-//() => sort(unsortedArrayState)
-// const draw = array => {
-//   array.forEach((x, i) => {
-//     document.getElementById(`d-${i}`).innerText = x;
-//     document.getElementById(`d-${i}`).style.width = `${x}%`;
-//   });
-// };
-//
-// sort(unsortedArray);
