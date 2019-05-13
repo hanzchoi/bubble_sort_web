@@ -1,4 +1,9 @@
 .bar{
-  background-color: black;
-  color: white;
+  background-color: #90AFC5;
+  color: #2A3132;
+  font-size: 1em;
+  font-family: inherit;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2A3132;
 }

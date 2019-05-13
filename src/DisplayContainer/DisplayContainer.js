@@ -6,7 +6,11 @@ const DisplayContainer = ({ unsortedArray }) => {
   const renderBars = () => {
     return unsortedArray.map((n, i) => <Bar key={i} n={n} id={i} />)
   }
-  return renderBars()
+  return (
+    <div className="display-container">
+      {renderBars()}
+    </div>
+  )
 }
 
 export default DisplayContainer;

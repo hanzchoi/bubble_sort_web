@@ -1,10 +1,13 @@
 import React from 'react';
 import './SelectionContainer.css';
+import Button from '../Button/Button';
 
-const SelectionContainer = () => {
+const SelectionContainer = ({unsortedArray, sort}) => {
 
   return(
-    <div></div>
+    <div className="selection-container">
+      <Button name={"Sort"} sort={sort} unsortedArray={unsortedArray}/>
+    </div>
   )
 }
 

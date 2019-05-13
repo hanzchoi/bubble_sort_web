@@ -1,9 +1,10 @@
 import React from 'react';
 import './Button.css';
 
-const Button = () => {
+const Button = ({name, sort, unsortedArray}) => {
   return(
-    <button>
+    <button className="button" onClick={() => sort(unsortedArray)}>
+      {name}
     </button>
   )
 }

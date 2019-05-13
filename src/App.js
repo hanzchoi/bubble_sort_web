@@ -29,9 +29,10 @@ const App = () => {
   return (
     <div className="App">
       <DisplayContainer unsortedArray={unsortedArrayState}/>
-      <button onClick={() => sort(unsortedArrayState)}>Sort</button>
+      <SelectionContainer sort={sort} unsortedArray={unsortedArrayState}/>
     </div>
   );
 }
 
 export default App;
+// <SelectionContainer sort={sort} unsortedArray={unsortedArrayState}/>
